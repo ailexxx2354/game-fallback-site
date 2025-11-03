@@ -2,7 +2,7 @@ const status = document.getElementById("status");
 
 async function checkBackend() {
   try {
-    const res = await fetch("https://seu-backend.onrender.com/ping");
+   const res = await fetch("https://telegram-bot-1dwt.onrender.com/ping");
     if (!res.ok) throw new Error("Falha no backend");
     const data = await res.text();
     status.innerText = "✅ Backend online: " + data;
